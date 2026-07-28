@@ -44,7 +44,7 @@ resource "aws_subnet" "private_subnet_2" {
   map_public_ip_on_launch = false
 
   tags = {
-    Name        = "${var.project_name}-${var.environment}-private-subnet-2"
+    Name        = "${var.project_name}-${var.environment}-private_subnet_2"
     Project     = var.project_name
     Environment = var.environment
   }
