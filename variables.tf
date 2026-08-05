@@ -76,3 +76,8 @@ variable "engine_version" {
   description = "PostgreSQL engine version"
   type        = string
 }
+variable "key_name" {
+  description = "EC2 Key Pair Name"
+
+  type = string
+}

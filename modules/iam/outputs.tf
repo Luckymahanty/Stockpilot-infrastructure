@@ -17,3 +17,16 @@ output "ecs_task_role_name" {
   description = "Name of the ECS Task Role"
   value       = aws_iam_role.ecs_task_role.name
 }
+
+output "jenkins_instance_profile_name" {
+  description = "Jenkins EC2 Instance Profile"
+
+  value = aws_iam_instance_profile.jenkins_profile.name
+}
+output "jenkins_role_arn" {
+  description = "Jenkins IAM Role ARN"
+
+  value = aws_iam_role.jenkins_role.arn
+}
+
+
