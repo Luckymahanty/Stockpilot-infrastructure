@@ -81,3 +81,12 @@ variable "key_name" {
 
   type = string
 }
+variable "database_url" {
+  description = "The connection string for the database"
+  type        = string
+}
+
+variable "ses_from_email" {
+  description = "The email address used by SES to send notifications"
+  type        = string
+}

@@ -29,4 +29,12 @@ output "jenkins_role_arn" {
   value = aws_iam_role.jenkins_role.arn
 }
 
+output "lambda_role_arn" {
+
+  description = "ARN of the Lambda IAM Role"
+
+  value = aws_iam_role.lambda_role.arn
+
+}
+
 
